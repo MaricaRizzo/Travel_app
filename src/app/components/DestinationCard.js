@@ -1,7 +1,10 @@
-export default function DestinationCard() {
+export default function DestinationCard(props) {
+  console.log(props.city);
   return (
     <div>
-      <p>DestinationCard</p>
+      <li>
+        {props.city.name}, {props.city.country}
+      </li>
     </div>
   );
 }
