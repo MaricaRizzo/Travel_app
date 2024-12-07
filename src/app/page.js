@@ -1,8 +1,19 @@
+import DestinationList from "./components/DestinationList";
+import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
     <div>
-      <main></main>
-      <footer></footer>
+      <Header />
+
+      <main>
+        <SearchBar />
+        <DestinationList />
+      </main>
+
+      <Footer />
     </div>
   );
 }
